@@ -242,6 +242,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CppUTestExt\MockMacrosTest.cpp"/>
     <ClCompile Include="CppUTest\AllocationInCFile.c" />
     <ClCompile Include="CppUTest\AllocationInCppFile.cpp" />
     <ClCompile Include="CppUTest\AllocLetTestFree.c" />
