@@ -43,12 +43,16 @@
 *       MOCK_VALUE_FUNCTION(float32_t, sqrtf, returnDoubleValueOrDefault(0.0), float32_t, value)
 * 
 *  You can also just generate the call to the mock:
-*  void putData(uint32_t dataNo, const char * name)
+*  void putData(uint32_t data, const char * name)
 *  {
-*      MOCK_ACTUAL_CALL(dataNo, name);
+*      MOCK_ACTUAL_CALL(data, name);
 *  }
 *
-*  Good luck :)
+*  And return values from the actual call:
+*  uint32_t getData(void)
+*  {
+*      return MOCK_ACTUAL_CALL().returnUnsignedIntValue();
+*  }
 **********************************************************************************************************************/
 
 
